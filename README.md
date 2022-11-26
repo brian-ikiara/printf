@@ -19,7 +19,6 @@ __SYNOPSIS__
 -----------------------------------------------------------------------------------------------
 
 __DESCRIPTION__
-
 	The normal printf() is designed to produce output based on a given specifier format.
 	Output ranges from characers to various number systems. Based on the conditions, various
 	other implementations such as sprintf() and vsnprintf() arise.
@@ -66,7 +65,7 @@ __DESCRIPTION__
 	b, u, o, x, X
 		Binary, Unsigned Decimal, Octal, Hexadecimal, Big Hexadecimal: Prints out the
 		various number systems.
-	
+
 	S	Big String: Prints non-printable characters (0 < (ASCII value <32) <= 127). The
 		format they're printed out is "\x<HDASCII>"
 
