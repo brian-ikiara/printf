@@ -31,14 +31,16 @@ and typedef, arrays...It basically is a culmination of what we've learnt so far 
 Welcome aboard.
 
 **Format string fundamentals**
-	The specifier format is a string and it's general usage is as follows:
+	
+The specifier format is a string and it's general usage is as follows:
 		```
 			_printf("%<flag><specifier>", <symbol1>, <symbol2>, ..., <symboln>);
 		```
 
 **Flags used**
-	Flags are characters that perform a similar job as a wildcard on the shell. For this
-	implementation the following were used:
+	
+Flags are characters that perform a similar job as a wildcard on the shell. For this
+implementation the following were used:
 
 	\+/\-	Plus, Minus: Denotes positive and negative sign convention, respectively.
 
@@ -49,13 +51,15 @@ Welcome aboard.
 	0	Zero padding: Pads a number with a given number of zeros instead of an empty space. Used with b, d, o, x, X conversion specifiers.
 
 **Length modifiers used**
+	
 	h	Short: Corresponds to a(n) (unsigned)short int.
 
 	l	Long: Corresponds to a(n) (unsigned) long int.
 
 **Conversion specifiers used**
-	The characters listed below were used to specify the various formats the output will
-	be presented. Are used together with the '%' character. They are as follows:
+	
+The characters listed below were used to specify the various formats the output will
+be presented. Are used together with the '%' character. They are as follows:
 
 	c	Character: Prints out a character.
 
@@ -74,7 +78,8 @@ Welcome aboard.
 
 	A
 **Custom conversion specifiers used**
-	These do an interesting job. Loved working with them:
+	
+These do an interesting job. Loved working with them:
 
 	r	Reverse: Prints out a reversed string.
 
