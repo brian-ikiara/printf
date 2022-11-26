@@ -33,22 +33,24 @@ Welcome aboard.
 **Format string fundamentals**
 	
 The specifier format is a string and it's general usage is as follows:
-		```
-			_printf("%<flag><specifier>", <symbol1>, <symbol2>, ..., <symboln>);
-		```
+		
+	```
+		_printf("%<flag><specifier>", <symbol1>, <symbol2>, ..., <symboln>);
+	```
 
 **Flags used**
 	
 Flags are characters that perform a similar job as a wildcard on the shell. For this
 implementation the following were used:
 
-	\+/\-	Plus, Minus: Denotes positive and negative sign convention, respectively.
+	+/-	Plus, Minus: Denotes positive and negative sign convention, respectively.
 
 	' '	Space: Places a blank before a positive number/empty string.
 
-	\#	Hash: Converts a number to a different base/number system.
+	#	Hash: Converts a number to a different base/number system.
 
-	0	Zero padding: Pads a number with a given number of zeros instead of an empty space. Used with b, d, o, x, X conversion specifiers.
+	0	Zero padding: Pads a number with a given number of zeros instead of an empty space.
+		Used with b, d, o, x, X conversion specifiers.
 
 **Length modifiers used**
 	
@@ -76,7 +78,6 @@ be presented. Are used together with the '%' character. They are as follows:
 
 	p	Pointer: Gives the memory address in hexadecimal
 
-	A
 **Custom conversion specifiers used**
 	
 These do an interesting job. Loved working with them:
