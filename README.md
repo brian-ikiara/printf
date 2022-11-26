@@ -34,9 +34,7 @@ Welcome aboard.
 	
 The specifier format is a string and it's general usage is as follows:
 		
-	```
-		_printf("%<flag><specifier>", <symbol1>, <symbol2>, ..., <symboln>);
-	```
+	_printf("%<flag><specifier>", <symbol1>, <symbol2>, ..., <symboln>);
 
 **Flags used**
 	
