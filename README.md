@@ -19,23 +19,24 @@ __SYNOPSIS__
 -----------------------------------------------------------------------------------------------
 
 __DESCRIPTION__
-	The normal printf() is designed to produce output based on a given specifier format.
-	Output ranges from characers to various number systems. Based on the conditions, various
-	other implementations such as sprintf() and vsnprintf() arise.
 
-	In our implementation, we'll be employing variadic functions, function pointers, struct
-	and typedef, arrays...It basically is a culmination of what we've learnt so far in our
-	@alx\_africa journey.
+The normal printf() is designed to produce output based on a given specifier format.
+Output ranges from characers to various number systems. Based on the conditions, various
+other implementations such as sprintf() and vsnprintf() arise.
 
-	Welcome aboard.
+In our implementation, we'll be employing variadic functions, function pointers, struct
+and typedef, arrays...It basically is a culmination of what we've learnt so far in our
+@alx\_africa journey.
 
-    **Format string fundamentals**
+Welcome aboard.
+
+**Format string fundamentals**
 	The specifier format is a string and it's general usage is as follows:
 		```
 			_printf("%<flag><specifier>", <symbol1>, <symbol2>, ..., <symboln>);
 		```
 
-    **Flags used**
+**Flags used**
 	Flags are characters that perform a similar job as a wildcard on the shell. For this
 	implementation the following were used:
 
@@ -47,12 +48,12 @@ __DESCRIPTION__
 
 	0	Zero padding: Pads a number with a given number of zeros instead of an empty space. Used with b, d, o, x, X conversion specifiers.
 
-    **Length modifiers used**
+**Length modifiers used**
 	h	Short: Corresponds to a(n) (unsigned)short int.
 
 	l	Long: Corresponds to a(n) (unsigned) long int.
 
-    **Conversion specifiers used**
+**Conversion specifiers used**
 	The characters listed below were used to specify the various formats the output will
 	be presented. Are used together with the '%' character. They are as follows:
 
@@ -72,7 +73,7 @@ __DESCRIPTION__
 	p	Pointer: Gives the memory address in hexadecimal
 
 	A
-    **Custom conversion specifiers used**
+**Custom conversion specifiers used**
 	These do an interesting job. Loved working with them:
 
 	r	Reverse: Prints out a reversed string.
@@ -82,4 +83,5 @@ __DESCRIPTION__
 -----------------------------------------------------------------------------------------------
 
 __REMARKS__
-	We really enjoyed this project and we can't wait for the next one, the Simple Shell.
+	
+We really enjoyed this project and we can't wait for the next one, the Simple Shell.
