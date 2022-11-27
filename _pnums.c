@@ -55,26 +55,6 @@ void _pnum(int n)
 }
 
 /**
- * _punsigned - Function
- * @l: _printf() args
- * @f: Pointer to flag specifier
- *
- * Description: Prints the unsigned decimal.
- * Return: _puts(s), unsigned int.
- * On error, stderr.
- */
-
-int _punsigned(va_list l, flag *f)
-{
-	unsigned int u = va_arg(l, unsigned int);
-	char *s = _conv(u, 10, 0);
-
-	(void)f;
-
-	return (_puts(s));
-}
-
-/**
  * _pint - Function
  * @l: _printf() args
  * @f: Pointer to flag specifier

@@ -71,14 +71,16 @@ be presented. Are used together with the '%' character. They are as follows:
 		Binary, Unsigned Decimal, Octal, Hexadecimal, Big Hexadecimal: Prints out the
 		various number systems.
 
-	S	Big String: Prints non-printable characters (0 < (ASCII value <32) <= 127). The
-		format they're printed out is "\x<HDASCII>"
-
 	p	Pointer: Gives the memory address in hexadecimal
+
+	%	Percent: Prints the character '%'.
 
 **Custom conversion specifiers used**
 	
 These do an interesting job. Loved working with them:
+
+	S	Big String: Prints non-printable characters (0 < (ASCII value <32) <= 127). The
+		format they're printed out is "\x<HDASCII>"
 
 	r	Reverse: Prints out a reversed string.
 
