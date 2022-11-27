@@ -45,12 +45,12 @@ int _pstr(va_list l, flag *f);
 /* Numbers case */
 int _digcount(int i);
 void _pnum(int n);
-int _punsigned(va_list l, flag *f);
 int _pint(va_list l, flag *f);
 
 /* Number systems case */
 int _pbinary(va_list l, flag *f);
 int _poctal(va_list l, flag *f);
+int _punsigned(va_list l, flag *f);
 int _phex(va_list l, flag *f);
 int _phexxx(va_list l, flag *f);
 
@@ -69,10 +69,10 @@ int _ppercent(va_list l, flag *f);
 char *_conv(unsigned long int n, int b, int lc);
 
 /* To get the flag specifier */
-int _gflag(char s, flag *f);
+int _gflag(char c, flag *f);
 
-/* To get the various print functions */
-int (*_gprint(char s))(va_list, flag);
+/* To select the various print functions */
+int (*_selfunc(char c))(va_list, flag);
 
 /* _printf() */
 int _printf(const char *format, ...);
