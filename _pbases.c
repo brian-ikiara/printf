@@ -36,7 +36,7 @@ int _poctal(va_list l, flag *f)
 	char *s = _conv(n, 8, 0);
 	int c = 0;
 
-	if (f->hash == 1 && str[0] != '0')
+	if (f->hash == 1 && s[0] != '0')
 		c += _putchar('0');
 
 	c += _puts(s);

@@ -32,7 +32,7 @@ int (*_selfunc(char c))(va_list, flag *)
 	};
 	register int i;
 
-	for (i = 0; i < flags; i++)
+	for (i = 0; i < cs; i++)
 	{
 		if (f_a[i].fs == c)
 			return (f_a[i].pf);
