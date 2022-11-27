@@ -68,13 +68,13 @@ int _ppercent(va_list l, flag *f);
 /* Conversion function */
 char *_conv(unsigned long int n, int b, int lc);
 
-/* _printf() */
-int _printf(const char *format, ...);
-
 /* To get the flag specifier */
 int _gflag(char s, flag *f);
 
 /* To get the various print functions */
 int (*_gprint(char s))(va_list, flag);
+
+/* _printf() */
+int _printf(const char *format, ...);
 
 #endif
