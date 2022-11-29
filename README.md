@@ -1,16 +1,16 @@
-__printf() implementation__
+_printf() implementation_
 
 -----------------------------------------------------------------------------------------------
 
-__SYNOPSIS__
+_SYNOPSIS_
 
-**Original printf()**
+*Original printf()*
 ```c
 	#include <stdio.h>
 	int printf(const char *format, ...);
 ```
 
-**Implemented printf()**
+*Implemented printf()*
 ```c
 	#include "main.h"
 	int _printf(const char *format, ...);
@@ -18,7 +18,7 @@ __SYNOPSIS__
 
 -----------------------------------------------------------------------------------------------
 
-__DESCRIPTION__
+_DESCRIPTION_
 
 The normal printf() is designed to produce output based on a given specifier format.
 Output ranges from characers to various number systems. Based on the conditions, various
@@ -30,7 +30,7 @@ and typedef, arrays...It basically is a culmination of what we've learnt so far 
 
 Welcome aboard.
 
-**Format string fundamentals**
+*Format string fundamentals*
 	
 The specifier format is a string and it's general usage is as follows:
 
@@ -38,7 +38,7 @@ The specifier format is a string and it's general usage is as follows:
 	_printf("%<flag><specifier>", <symbol1>, <symbol2>, ..., <symboln>);
 ```
 
-**Flags used**
+*Flags used*
 	
 Flags are characters that perform a similar job as a wildcard on the shell. For this
 implementation the following were used:
@@ -52,13 +52,13 @@ implementation the following were used:
 	0	Zero padding: Pads a number with a given number of zeros instead of an empty space.
 		Used with b, d, o, x, X conversion specifiers.
 
-**Length modifiers used**
+*Length modifiers used*
 	
 	h	Short: Corresponds to a(n) (unsigned)short int.
 
 	l	Long: Corresponds to a(n) (unsigned) long int.
 
-**Conversion specifiers used**
+*Conversion specifiers used*
 	
 The characters listed below were used to specify the various formats the output will
 be presented. Are used together with the '%' character. They are as follows:
@@ -77,7 +77,7 @@ be presented. Are used together with the '%' character. They are as follows:
 
 	%	Percent: Prints the character '%'.
 
-**Custom conversion specifiers used**
+*Custom conversion specifiers used*
 	
 These do an interesting job. Loved working with them:
 
@@ -90,6 +90,6 @@ These do an interesting job. Loved working with them:
 
 -----------------------------------------------------------------------------------------------
 
-__REMARKS__
+_REMARKS_
 	
 We really enjoyed this project and we can't wait for the next one, the Simple Shell.
