@@ -14,7 +14,7 @@
 int _pchar(va_list l, flag *f)
 {
 	(void)f;
-	_putchar(va_arg(l, int));
+	_putchar(va_arg(l, int) + '0');
 
 	return (1);
 }

@@ -12,18 +12,18 @@
 
 int _putchar(char c)
 {
-	static char *b[1024];
+	static char b[1024];
 	static int i;
 
 	if (c == -1 || i >= 1024)
 	{
-		write(1, &(*b), i);
+		write(1, &b, i);
 		i = 0;
 	}
 
 	if (c != -1)
 	{
-		*b[i] = c;
+		b[i] = c;
 		i++;
 	}
 
