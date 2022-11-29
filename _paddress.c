@@ -16,6 +16,7 @@ int _paddress(va_list l, flag *f)
 {
 	unsigned long int p = va_arg(l, unsigned long int);
 	char *s = _conv(p, 16, 1);
+
 	register int c = 0;
 
 	(void)f;
