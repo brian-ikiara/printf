@@ -35,7 +35,7 @@ typedef struct Handler
 } handler;
 
 /* putchar() and puts() implementation */
-int _putchar(char c);
+void _putchar(char c);
 int _puts(char *str);
 
 /* Alphanumeric cases */

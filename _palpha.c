@@ -7,16 +7,17 @@
  * @f: Flag specifier
  *
  * Description: Prints a character
- * Return: 1.
+ * Return: void.
  * On error, stderr.
  */
 
-int _pchar(va_list l, flag *f)
+void _pchar(va_list l, flag *f)
 {
-	(void)f;
-	_putchar(va_arg(l, char));
+	int c;
 
-	return (1);
+	(void)f;
+	c = va_arg(l, int) + '0';
+	_putchar(c);
 }
 
 /**
