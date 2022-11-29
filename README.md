@@ -5,13 +5,13 @@ __printf() implementation__
 __SYNOPSIS__
 
 **Original printf()**
-```
+```c
 	#include <stdio.h>
 	int printf(const char *format, ...);
 ```
 
 **Implemented printf()**
-```
+```c
 	#include "main.h"
 	int _printf(const char *format, ...);
 ```
@@ -33,8 +33,10 @@ Welcome aboard.
 **Format string fundamentals**
 	
 The specifier format is a string and it's general usage is as follows:
-		
+
+```c	
 	_printf("%<flag><specifier>", <symbol1>, <symbol2>, ..., <symboln>);
+```
 
 **Flags used**
 	
